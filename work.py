@@ -194,15 +194,14 @@ def verify_jumin():
 def pi():
    import random
 
-   n=4000000000
-   count=0
+   n = 40000000
+   count = float(0)
    for i in range(n):
       x=random.uniform(0,1.0)
       y=random.uniform(0,1.0)
       if (x**2+y**2)<=1:
-         count=count+1
-
-   pp = 4*count/n
+         count = count + 1.0
+   pp = 4.0*count/float(n)
 
    return f"파이값 = {pp}"
 
